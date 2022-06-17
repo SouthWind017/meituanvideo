@@ -1,8 +1,8 @@
 <template>
   <van-tabbar
       v-model="active"
-      active-color="#FED722"
-      inactive-color="#979799"
+      active-color="#FFFFFF"
+      inactive-color="#FFFFFF"
       :border=false
   >
     <van-tabbar-item
@@ -27,7 +27,7 @@ export default {
       active:0,
       tabBarList:[
         {
-          title : "视频",
+          title : "首页",
           path : "/",
           name : "home",
           icon:{
@@ -35,20 +35,12 @@ export default {
             noActive:require('@/assets/tabbar/unhome.png'),
           }
         },{
-          title : "频道",
+          title : "分类",
           path : "/Channel",
           name : "channel",
           icon:{
             active: require('@/assets/tabbar/channel.png'),
             noActive:require('@/assets/tabbar/unchannel.png'),
-          }
-        },{
-          title : "热点",
-          path : "/Hotspot",
-          name : "hotspot",
-          icon:{
-            active: require('@/assets/tabbar/hotspot.png'),
-            noActive:require('@/assets/tabbar/unhotspot.png'),
           }
         },{
           title : "我的",
@@ -89,15 +81,17 @@ export default {
   background-color: unset;
 }
 .van-tabbar{
-  height: 60px;
-  border-radius:20px 20px 0 0;
-  background-color: #FFF;
+  height: 80px;
+  background-color:#1A1A1A;
+}
+::v-deep .van-tabbar-item__icon{
+  margin-bottom:10px;
 }
 .van-tabbar-item__icon img {
-  height: 30px;
+  height: 26px;
 }
 .van-tabbar-item__text span{
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
 }
 </style>

@@ -20,11 +20,6 @@ export const constantRoutes  = [
         path: '/Channel',
         name: "channel",
         component:() => import('@/views/channel/index')
-    },
-    {
-        path: '/Hotspot',
-        name: "hotspot",
-        component:() => import('@/views/hotspot/index')
     },{
         path: '/Mine',
         name: "mine",
